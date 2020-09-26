@@ -2,15 +2,30 @@
   "name": "covid19_dashboard",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://saitejababu.github.io/Covid19-dashboard",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/lab": "^4.0.0-alpha.56",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "chart.js": "^2.9.3",
+    "leaflet": "^1.7.1",
+    "numeral": "^2.0.6",
     "react": "^16.13.1",
+    "react-chartjs-2": "^2.10.0",
+    "react-countup": "^4.3.3",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-icons": "^3.11.0",
+    "react-leaflet": "^2.7.0",
+    "react-scripts": "3.4.3",
+    "react-share": "^4.3.0",
+    "react-share-icons": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -30,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
