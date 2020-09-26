@@ -65,7 +65,7 @@
     width: 600px;
     display: flex;
     flex-direction: row;
-    position: fixed;
+    position: absolute;
 }
 
 .country__info p{

@@ -33,8 +33,7 @@ function App() {
   const [mapButtoncolour, setmapButton] = useState(true);
   const [tableButtoncolour, settableButton] = useState(false);
   const [graphButtoncolour, setgraphButton] = useState(false);
-  
- 
+  const [date, setDate] = useState([]);
   
 
   useEffect(() => {
@@ -140,6 +139,34 @@ function App() {
     setmapButton(false);
 
   }
+
+//Fetching lastupdated date
+  useEffect(() => {
+    const fetchData = async () => {
+      await fetch("https://disease.sh/v3/covid-19/historical/all?lastdays=1")
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          let lastupdated = buildlastupdated(data);
+          setDate(lastupdated);
+        });
+    };
+
+    fetchData();
+  }, []);
+
+  
+  const buildlastupdated = (data) => {
+    let lastupdated = "";
+    for (let date in data.cases) {
+        lastupdated=date;
+    }
+    return lastupdated;
+  };
+
+
+
   
 
      
@@ -236,6 +263,7 @@ function App() {
         title="Infected" 
         cases={FormatNum(countryInfo.todayCases)} 
         total={numeral(countryInfo.cases).format("0.0a")}
+        date={date}
         />
 
         <InfoBox 
@@ -244,6 +272,7 @@ function App() {
         title="Recovered" 
         cases={FormatNum(countryInfo.todayRecovered)} 
         total={numeral(countryInfo.recovered).format("0.0a")}
+        date={date}
         
         />
         <InfoBox 
@@ -252,7 +281,9 @@ function App() {
         active={casesType === "deaths"} 
         title="Deaths" 
         cases={FormatNum(countryInfo.todayDeaths)} 
-        total={numeral(countryInfo.deaths).format("0.0a")}/>
+        total={numeral(countryInfo.deaths).format("0.0a")}
+        date={date}
+        />
         </div>
 
       {SelectorView==="map" && (

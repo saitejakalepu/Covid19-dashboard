@@ -2,7 +2,6 @@
   border-radius: 20px;
   width: 300px;
   cursor: pointer;
-  
   } 
 
   .infoBox--selected {
@@ -29,4 +28,11 @@
     font-weight: 700 !important;
     font-size: 1.2rem !important;
     margin-top: 5px !important;
+  }
+
+  .infoBox__date {
+    color: #6c757d;
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+    margin-top: 3px !important;
   }

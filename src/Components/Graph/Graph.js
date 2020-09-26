@@ -78,6 +78,7 @@ function Graph({ casesType}) {
           return response.json();
         })
         .then((data) => {
+          console.log(data);
           let chartData = buildChartData(data, casesType);
           setData(chartData);
         });
@@ -86,7 +87,7 @@ function Graph({ casesType}) {
     fetchData();
   }, [casesType]);
 
-
+console.log(data);
   return (
     <div>
 
