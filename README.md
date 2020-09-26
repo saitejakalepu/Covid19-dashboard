@@ -3,11 +3,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Covid19 Dashboard
 This is a covid dashboard application which fetches the data from [disease.sh](https://disease.sh/docs/) and display in the 3 different views say Map view , Table view and chart view.
 
-The Search bar helps in finding covid data for a specific country.
+## Contents
 
-The Social Media Icons helps in sharing the React App. 
+### `Covid Logo`
 
-### `npm start`
+Clicking on the Covid Logo refreshes the page.
+
+### `Search Bar`
+
+Helps in displaying the specific country data.
+Search List contains both Country Flag and Country Name.
+Search functionality is performed either by entering the country name in search bar or by simply clicking on the country name from the list.
+
+### ``
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
