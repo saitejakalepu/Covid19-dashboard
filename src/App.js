@@ -160,18 +160,25 @@ function App() {
     let lastupdated, year,mon,dd;
     
     for (let date in data.cases) {
-        lastupdated=date;
+        lastupdated= date;
     }
-    
+    console.log(lastupdated);
     if(lastupdated.charAt(1)==="/")
     {
       lastupdated="0"+lastupdated;
     }
 
+    if(lastupdated.charAt(4)==="/")
+    {
+      lastupdated=lastupdated.substring(0,3)+"0"+lastupdated.substring(3,8);
+    }
+    
+    console.log(lastupdated);
        year = '20'+lastupdated.substring(6,8);
        mon = lastupdated.substring(0,2);
        dd = lastupdated.substring(3,5);
       //changing unformatted data to formatted data 
+      
        if(mon==="01")
        {
          mon= "jan"
