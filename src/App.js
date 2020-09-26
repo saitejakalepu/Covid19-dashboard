@@ -14,6 +14,8 @@ import numeral from "numeral";
 import Tooltip from "@material-ui/core/Tooltip";
 import Icons from './Components/Icons';
 import { Icon } from '@material-ui/core';
+import Globe_img from '../src/images/Globe_img.JPG';
+import covid_logo from '../src/images/covid_logo.JPG';
 
 function App() {
 
@@ -150,7 +152,7 @@ function App() {
          title="Click here to refresh page"
          placement="right" 
          arrow  >
-        <img src="/images/covid_logo.jpg" onClick={refreshPage} alt=""/></Tooltip>
+        <img src={covid_logo} onClick={refreshPage} alt=""/></Tooltip>
         </div>
         
         <div className="search__box">
@@ -206,7 +208,7 @@ function App() {
 
       {infoView==="countryDisplay"&& countryInfo.countryInfo && countryInfo.countryInfo.flag && (
       <div className="country__info" >
-        <img src="globe_img.jpg"  alt="" width="50px" height="40px"/>&nbsp;&nbsp;Global &nbsp;&nbsp; >  &nbsp;&nbsp;
+        <img src={Globe_img}  alt="" width="50px" height="40px"/>&nbsp;&nbsp;Global &nbsp;&nbsp; >  &nbsp;&nbsp;
         <div className="info-flag"
         style={{ backgroundImage: `url(${countryInfo.countryInfo.flag})` ,width:50,
         height:35, borderRadius:5}}

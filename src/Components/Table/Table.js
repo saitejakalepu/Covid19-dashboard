@@ -1,5 +1,6 @@
 import React from 'react';
 import './Table.css';
+import Globe_img from '../../images/Globe_img.JPG';
 
 function Table({countries, info}) {
     console.log(countries);
@@ -26,7 +27,7 @@ function Table({countries, info}) {
                     {!info.country &&(
                         <td>
                         <div className="div__flag">
-                        <img src="globe_img.jpg"  alt="" width="50px" height="40px"/>
+                        <img src={Globe_img}  alt="" width="50px" height="40px"/>
                             <div  style={ {marginTop:10}}> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Global</div>
                         </div>
                         </td>

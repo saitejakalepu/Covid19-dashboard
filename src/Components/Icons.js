@@ -14,7 +14,7 @@ import {
       return (
           <div >
           <FacebookShareButton
-               url={"https://github.com/saitejababu"}
+               url={"https://saitejababu.github.io/Covid19-dashboard"}
                 quote={"Check out the new covid tracker"}
                 hashtag="#Covid19_Dashboard"
                 className="socialMediaButton">
@@ -22,7 +22,7 @@ import {
           <FacebookIcon size={36} round={true}/>
           </FacebookShareButton>
           <TwitterShareButton 
-                url={"https://github.com/saitejababu"}
+                url={"https://saitejababu.github.io/Covid19-dashboard"}
                 quote={"Check out the new covid tracker"}
                 hashtag="#Covid19_Dashboard"
                 className="socialMediaButton">
@@ -30,7 +30,7 @@ import {
           <TwitterIcon size={36} round={true}/>
           </TwitterShareButton>
           <EmailShareButton 
-                url={"https://github.com/saitejababu"}
+                url={"https://saitejababu.github.io/Covid19-dashboard"}
                 quote={"Check out the new covid tracker"}
                 hashtag="#Covid19_Dashboard"
                 className="socialMediaButton">
