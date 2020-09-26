@@ -156,20 +156,84 @@ function App() {
     fetchData();
   }, []);
 
-  
   const buildlastupdated = (data) => {
-    let lastupdated = "";
+    let lastupdated, year,mon,dd;
+    
     for (let date in data.cases) {
         lastupdated=date;
     }
-    return lastupdated;
+    
+    if(lastupdated.charAt(1)==="/")
+    {
+      lastupdated="0"+lastupdated;
+    }
+
+       year = '20'+lastupdated.substring(6,8);
+       mon = lastupdated.substring(0,2);
+       dd = lastupdated.substring(3,5);
+      //changing unformatted data to formatted data 
+       if(mon==="01")
+       {
+         mon= "jan"
+       }
+       else if(mon==="02")
+       {
+         mon= "feb"
+       }
+       else if(mon==="03")
+       {
+         mon= "mar"
+       }
+       else if(mon==="04")
+       {
+         mon= "apr"
+       }
+       else if(mon==="05")
+       {
+         mon= "may"
+       }
+       else if(mon==="06")
+       {
+         mon= "jun"
+       }
+       else if(mon==="07")
+       {
+         mon= "jul"
+       }
+       else if(mon==="08")
+       {
+         mon= "aug"
+       }
+       else if(mon==="09")
+       {
+         mon= "sep"
+       }
+       else if(mon==="10")
+       {
+         mon= "oct"
+       }
+       else if(mon==="11")
+       {
+         mon= "nov"
+       }
+       else if(mon==="12")
+       {
+         mon= "dec"
+       }
+       
+
+       var day = new Date(mon+' '+dd+' '+year);
+      
+       var nextDay = new Date(day);
+       nextDay.setDate(day.getDate()+1);
+      
+       var res = nextDay.toString().substr(0, 15);
+       console.log(res);
+       return res;
   };
 
+    
 
-
-  
-
-     
   return (
     <div className="app">
       <div className="app__header">
