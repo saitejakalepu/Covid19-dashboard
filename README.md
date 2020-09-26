@@ -1,10 +1,21 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Covid19 Dashboard
+This is a covid dashboard application which fetches the data from [disease.sh](https://disease.sh/docs/) and display in the 3 different views say Map view , Table view and chart view.
 
-In the project directory, you can run:
+## Contents
 
-### `npm start`
+### `Covid Logo`
+
+Clicking on the Covid Logo refreshes the page.
+
+### `Search Bar`
+
+Helps in displaying the specific country data.
+Search List contains both Country Flag and Country Name.
+Search functionality is performed either by entering the country name in search bar or by simply clicking on the country name from the list.
+
+### ``
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
