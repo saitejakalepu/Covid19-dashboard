@@ -55,10 +55,10 @@ new Date(date).toDateString() is used to convert updatedAt date to Day Month Dat
 2.Line Graph fetches the time series date of last 210 days and plots the graph which displays the new cases added on timely basis<br/>
 3.Line graph of global time series data is displayed when no country is selected.<br />
 4.Line graph of Country time series data is displayed when a specific country is selected.<br />
-4.Infected data is set as default data in the Chart and represented with red colour Line graph.<br />
-5.Whenever Recovered Info box is selected recovered data is represented in the Chart with green colour Line Graph.<br />
-6.Whenever deaths Info box is selected deaths data is represented in the Chart with red colour Line Graph.<br />
-7.Bar and Pie chart fetches the total data of infected , recovered and deaths of selected country and presents them in the form of bar and pie chart.<br />
+5.Infected data is set as default data in the Chart and represented with red colour Line graph.<br />
+6.Whenever Recovered Info box is selected recovered data is represented in the Chart with green colour Line Graph.<br />
+7.Whenever deaths Info box is selected deaths data is represented in the Chart with red colour Line Graph.<br />
+8.Bar and Pie chart fetches the total data of infected , recovered and deaths of selected country and presents them in the form of bar and pie chart.<br />
 
 
 
