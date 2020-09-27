@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Covid19 Dashboard
-This is a covid dashboard application which fetches the data from [disease.sh](https://disease.sh/docs/) and display in the 3 different views say Map view , Table view and chart view.
+This is a covid dashboard application which fetches the data from [disease.sh](https://disease.sh/docs/) and display in the 4 different views say Card view , Map view , Table view and chart view.
 
 ## Contents
 
