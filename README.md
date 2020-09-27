@@ -15,7 +15,29 @@ Helps in displaying the specific country data.
 Search List contains both Country Flag and Country Name.
 Search functionality is performed either by entering the country name in search bar or by simply clicking on the country name from the list.
 
-### ``
+### `Social Media Icons`
+
+These Social Media Icons helps to share the React-App to their Social media accounts.
+
+### `Country Info panel`
+
+Whenever a country is selected the country flag and country name is displayed in Info panel.
+
+### `Info Card`
+Info Card represents new confirmed/recovered/death cases , last updated date , total number of confirmed/recovered/death cases.
+
+### `View Selector`
+
+=> ### `Map View`
+
+1.Map view is set as default fot the react-app.<br />
+2.Data is represented in the form of circle in map view.i.e Larger the circle , higher the cases.
+3.Infected data is set as default data in map view and represented with red colour circle.
+4.Whenever Recovered Info box is selected recovered data is represented in map with green colour circle.
+5.Whenever deaths Info box is selected deaths data is represented in map with light orange colour circle.
+6.When a country is selected from the search bar , the map is zoomed to speicifc country.
+7.Whenever a mouse is hovered on the country the country data is displayed
+
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
