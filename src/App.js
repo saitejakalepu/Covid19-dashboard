@@ -35,7 +35,7 @@ function App() {
   const [graphButtoncolour, setgraphButton] = useState(false);
   const [date, setDate] = useState([]);
   
-
+  
   useEffect(() => {
     fetch("https://disease.sh/v3/covid-19/all")
       .then((response) => response.json())
@@ -44,13 +44,12 @@ function App() {
       });
   }, []);
 
-  
-
   useEffect(() => {
     const getCountriesData = async () => {
       fetch("https://disease.sh/v3/covid-19/countries")//fetching country data
         .then((response) => response.json())
         .then((data) => {
+          
           const countries = data.map((country) => ({
             name: country.country,
             value : country.countryInfo.iso2,
@@ -67,14 +66,11 @@ function App() {
     getCountriesData();
   }, []);
 
-  
-
 
   const OnCountryChange = async (event, value) => {
     const countryCode = value ? value : event.target.value
     setinfoView("countryDisplay");
     setchartView("bar/pie");
-    
     
     let checkvalid= checkInputValid(countryCode, countries); // input field validation
    
@@ -140,107 +136,23 @@ function App() {
 
   }
 
-//Fetching lastupdated date
+
   useEffect(() => {
-    const fetchData = async () => {
-      await fetch("https://disease.sh/v3/covid-19/historical/all?lastdays=1")
-        .then((response) => {
-          return response.json();
-        })
+    const getCountriesData = async () => {
+      fetch("https://disease.sh/v3/covid-19/jhucsse")//fetching Last updated date
+        .then((response) => response.json())
         .then((data) => {
-          let lastupdated = buildlastupdated(data);
-          setDate(lastupdated);
+          const myDate = data.slice(0,1).map((a) => ({
+            value : a.updatedAt
+          }));
+          const x=myDate.map((country) => country.value)
+          setDate(x);
         });
     };
-
-    fetchData();
+    getCountriesData();
   }, []);
 
-  const buildlastupdated = (data) => {
-    let lastupdated, year,mon,dd;
-    
-    for (let date in data.cases) {
-        lastupdated= date;
-    }
-    console.log(lastupdated);
-    if(lastupdated.charAt(1)==="/")
-    {
-      lastupdated="0"+lastupdated;
-    }
-
-    if(lastupdated.charAt(4)==="/")
-    {
-      lastupdated=lastupdated.substring(0,3)+"0"+lastupdated.substring(3,8);
-    }
-    
-    console.log(lastupdated);
-       year = '20'+lastupdated.substring(6,8);
-       mon = lastupdated.substring(0,2);
-       dd = lastupdated.substring(3,5);
-      //changing unformatted data to formatted data 
-      
-       if(mon==="01")
-       {
-         mon= "jan"
-       }
-       else if(mon==="02")
-       {
-         mon= "feb"
-       }
-       else if(mon==="03")
-       {
-         mon= "mar"
-       }
-       else if(mon==="04")
-       {
-         mon= "apr"
-       }
-       else if(mon==="05")
-       {
-         mon= "may"
-       }
-       else if(mon==="06")
-       {
-         mon= "jun"
-       }
-       else if(mon==="07")
-       {
-         mon= "jul"
-       }
-       else if(mon==="08")
-       {
-         mon= "aug"
-       }
-       else if(mon==="09")
-       {
-         mon= "sep"
-       }
-       else if(mon==="10")
-       {
-         mon= "oct"
-       }
-       else if(mon==="11")
-       {
-         mon= "nov"
-       }
-       else if(mon==="12")
-       {
-         mon= "dec"
-       }
-       
-
-       var day = new Date(mon+' '+dd+' '+year);
-      
-       var nextDay = new Date(day);
-       nextDay.setDate(day.getDate()+1);
-      
-       var res = nextDay.toString().substr(0, 15);
-       console.log(res);
-       return res;
-  };
-
-    
-
+ 
   return (
     <div className="app">
       <div className="app__header">
@@ -335,6 +247,7 @@ function App() {
         cases={FormatNum(countryInfo.todayCases)} 
         total={numeral(countryInfo.cases).format("0.0a")}
         date={date}
+        
         />
 
         <InfoBox 
@@ -344,6 +257,7 @@ function App() {
         cases={FormatNum(countryInfo.todayRecovered)} 
         total={numeral(countryInfo.recovered).format("0.0a")}
         date={date}
+      
         
         />
         <InfoBox 
@@ -353,7 +267,8 @@ function App() {
         title="Deaths" 
         cases={FormatNum(countryInfo.todayDeaths)} 
         total={numeral(countryInfo.deaths).format("0.0a")}
-        date={date}
+         date={date}
+        
         />
         </div>
 
