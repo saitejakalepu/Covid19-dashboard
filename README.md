@@ -24,7 +24,9 @@ These Social Media Icons helps to share the React-App to their Social media acco
 Whenever a country is selected the country flag and country name is displayed in Info panel.
 
 ### `Info Card`
-Info Card represents new confirmed/recovered/death cases , last updated date , total number of confirmed/recovered/death cases.
+Info Card represents new infected/recovered/death cases , last updated date , total number of infected/recovered/death cases.<br />
+Numeral is used to convert higher values in easy readable format.<br/>
+new Date(date).toDateString() is used to convert updatedAt date to Day Month Date Year format.<br/>
 
 ### `View Selector`
 
@@ -48,7 +50,7 @@ Info Card represents new confirmed/recovered/death cases , last updated date , t
 
 
 ### `Chart View`
-Default :
+Default :<br />
 1.Data is represented in the form of Line/pie/bar chart in Chart view view.<br />
 2.Line Graph fetches the time series date of last 210 days and plots the graph which displays the new cases added on timely basis<br/>
 3.Line graph of global data is displayed when no country is selected.<br />
@@ -56,7 +58,7 @@ Default :
 5.Whenever Recovered Info box is selected recovered data is represented in the Chart with green colour Line Graph.<br />
 6.Whenever deaths Info box is selected deaths data is represented in the Chart with red colour Line Graph.<br />
 
-Country Selected :
+Country Selected :<br />
 1.Line graph of Country data is displayed when a country is selected.<br />
 2.Infected data is set as default data in the Chart and represented with red colour Line graph.<br />
 3.Whenever Recovered Info box is selected recovered data is represented in the Chart with green colour Line Graph.<br />
