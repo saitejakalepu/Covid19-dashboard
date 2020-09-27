@@ -28,7 +28,7 @@ Info Card represents new confirmed/recovered/death cases , last updated date , t
 
 ### `View Selector`
 
-=> ### `Map View`
+#### `Map View`
 
 1.Map view is set as default fot the react-app.<br />
 2.Data is represented in the form of circle in map view.i.e Larger the circle , higher the cases.
