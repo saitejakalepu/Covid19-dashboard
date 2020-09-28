@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Covid19 Dashboard
 This is a covid dashboard application which fetches the data from [disease.sh](https://disease.sh/docs/) and display in the 4 different views say Card view , Map view , Table view and Chart view.
 
-## Published at 
+## React App Published at 
 https://saitejababu.github.io/Covid19-dashboard/
 
 ## Contents
