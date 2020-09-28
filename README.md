@@ -75,7 +75,7 @@ with yarn<br />
 yarn add @material-ui/core
 
 
-###`React Leaflet`
+### `React Leaflet`
 For displaying MAP
 
 Using npm or Yarn<br />
@@ -87,7 +87,7 @@ React, ReactDOM and Leaflet are peer dependencies, if you haven't already instal
 npm install leaflet react react-dom # npm <br />
 yarn add leaflet react react-dom # YarnInstallation via NPM<br />
 
-###`React Chartjs2`
+### `React Chartjs2`
 For Charts
 
 npm install --save react-chartjs-2 chart.js<br />
@@ -95,7 +95,7 @@ Installation via YARN<br />
 yarn add react-chartjs-2 chart.js<br />
 
 
-###`React Share`
+### `React Share`
 For Social Media Icons<br />
 npm install react-share --save<br />
 
