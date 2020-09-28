@@ -61,6 +61,44 @@ new Date(date).toDateString() is used to convert updatedAt date to Day Month Dat
 8.Bar and Pie chart fetches the total data of infected , recovered and deaths of selected country and presents them in the form of bar and pie chart.<br />
 
 
+## Dependencies
+
+
+### `Material UI `
+For Card, CardContent, Typography , Tooltip & Icon  <br />
+
+with npm<br />
+npm install @material-ui/core
+npm install @material-ui/lab/Autocomplete // for search bar
+
+with yarn<br />
+yarn add @material-ui/core
+
+
+###`React Leaflet`
+For displaying MAP
+
+Using npm or Yarn<br />
+npm install react-leaflet # npm <br />
+
+yarn add react-leaflet # Yarn<br />
+React, ReactDOM and Leaflet are peer dependencies, if you haven't already installed them you can use:<br />
+
+npm install leaflet react react-dom # npm <br />
+yarn add leaflet react react-dom # YarnInstallation via NPM<br />
+
+###`React Chartjs2`
+For Charts
+
+npm install --save react-chartjs-2 chart.js<br />
+Installation via YARN<br />
+yarn add react-chartjs-2 chart.js<br />
+
+
+###`React Share`
+For Social Media Icons<br />
+npm install react-share --save<br />
+
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
