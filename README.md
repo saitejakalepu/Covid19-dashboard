@@ -32,6 +32,7 @@ new Date(date).toDateString() is used to convert updatedAt date to Day Month Dat
 ### `View Selector`
 
 ### `Map View`
+<li>Map view is set as default fot the react-app</li>
 
 1.Map view is set as default fot the react-app.<br />
 2.Data is represented in the form of circle in map view.i.e Larger the circle , higher the cases.<br />
