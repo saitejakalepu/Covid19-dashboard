@@ -33,6 +33,18 @@ new Date(date).toDateString() is used to convert updatedAt date to Day Month Dat
 
 ### `Map View`
 <li>Map view is set as default fot the react-app</li>
+<li>Data is represented in the form of circle in map view.i.e Larger the circle , higher the cases</li>
+<li>Infected data is set as default data in map view and represented with red colour circle</li>
+<li>When a country is selected from the search bar , the map is zoomed to speicifc country</li>
+<li>Whenever Recovered Info box is selected recovered data is represented in map with green colour circle</li>
+<li>Whenever deaths Info box is selected deaths data is represented in map with light orange colour circle</li>
+<li>Whenever a mouse is hovered on a specific country ,the country data is displayed</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
 
 1.Map view is set as default fot the react-app.<br />
 2.Data is represented in the form of circle in map view.i.e Larger the circle , higher the cases.<br />
