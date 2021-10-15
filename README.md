@@ -4,6 +4,8 @@ This is a covid dashboard application which fetches the data from [disease.sh](h
 ## Application Published at 
 https://saitejakalepu.github.io/Covid19-dashboard/
 
+<img src="Capture_covid_dashboard" alt="covid dashboard screenshot"/>
+
 ## Contents
 
 ### `Covid Logo`
