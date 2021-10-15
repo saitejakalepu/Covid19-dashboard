@@ -32,48 +32,31 @@ new Date(date).toDateString() is used to convert updatedAt date to Day Month Dat
 ### `View Selector`
 
 ### `Map View`
-<li>Map view is set as default fot the react-app</li>
-<li>Data is represented in the form of circle in map view.i.e Larger the circle , higher the cases</li>
-<li>Infected data is set as default data in map view and represented with red colour circle</li>
-<li>When a country is selected from the search bar , the map is zoomed to speicifc country</li>
-<li>Whenever Recovered Info box is selected recovered data is represented in map with green colour circle</li>
-<li>Whenever deaths Info box is selected deaths data is represented in map with light orange colour circle</li>
-<li>Whenever a mouse is hovered on a specific country ,the country data is displayed</li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-
-1.Map view is set as default fot the react-app.<br />
-2.Data is represented in the form of circle in map view.i.e Larger the circle , higher the cases.<br />
-3.Infected data is set as default data in map view and represented with red colour circle.<br />
-4.Whenever Recovered Info box is selected recovered data is represented in map with green colour circle.<br />
-5.Whenever deaths Info box is selected deaths data is represented in map with light orange colour circle.<br />
-6.When a country is selected from the search bar , the map is zoomed to speicifc country.<br />
-7.Whenever a mouse is hovered on a specific country ,the country data is displayed.<br />
-
+<li>Map view is set as default fot the react-app.</li>
+<li>Data is represented in the form of circle in map view.i.e Larger the circle , higher the cases.</li>
+<li>Infected data is set as default data in map view and represented with red colour circle.</li>
+<li>When a country is selected from the search bar , the map is zoomed to speicifc country.</li>
+<li>Whenever Recovered Info box is selected recovered data is represented in map with green colour circle.</li>
+<li>Whenever deaths Info box is selected deaths data is represented in map with light orange colour circle.</li>
+<li>Whenever a mouse is hovered on a specific country ,the country data is displayed.</li>
 
 ### `Table View`
 
-1.Data is represented in the form of table in table view.<br />
-2.Data is sorted from high to low cases in the table.<br />
-3.When no country is selected table view shows both global data and data of all countries.<br />
-4.When a country is selected table view shows the data of only selected country.<br />
-
+<li>Data is represented in the form of table in table view.</li>
+<li>Data is sorted from high to low cases in the table.</li>
+<li>When no country is selected table view shows both global data and data of all countries.</li>
+<li>When a country is selected table view shows the data of only selected country.</li>
 
 ### `Chart View`
 
-1.Data is represented in the form of Line/pie/bar chart in Chart View.<br />
-2.Line Graph fetches the time series date of last 210 days and plots the graph which displays the new cases added on timely basis<br/>
-3.Line graph of global time series data is displayed when no country is selected.<br />
-4.Line graph of Country time series data is displayed when a specific country is selected.<br />
-5.Infected data is set as default data in the Chart and represented with red colour Line graph.<br />
-6.Whenever Recovered Info box is selected recovered data is represented in the Chart with green colour Line Graph.<br />
-7.Whenever deaths Info box is selected deaths data is represented in the Chart with red colour Line Graph.<br />
-8.Bar and Pie chart fetches the total data of infected , recovered and deaths of selected country and presents them in the form of bar and pie chart.<br />
-
+<li>Data is represented in the form of Line/pie/bar chart in Chart View.</li>
+<li>Line Graph fetches the time series date of last 210 days and plots the graph which displays the new cases added on timely basis.</li>
+<li>Line graph of global time series data is displayed when no country is selected.</li>
+<li>Line graph of Country time series data is displayed when a specific country is selected.</li>
+<li>Infected data is set as default data in the Chart and represented with red colour Line graph.</li>
+<li>Whenever Recovered Info box is selected recovered data is represented in the Chart with green colour Line Graph.</li>
+<li>Whenever deaths Info box is selected deaths data is represented in the Chart with red colour Line Graph.</li>
+<li>Bar and Pie chart fetches the total data of infected , recovered and deaths of selected country and presents them in the form of bar and pie chart.</li>
 
 ## Dependencies
 
