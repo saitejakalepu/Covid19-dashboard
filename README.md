@@ -10,26 +10,28 @@ https://saitejakalepu.github.io/Covid19-dashboard/
 
 ### `Covid Logo`
 
-Clicking on the Covid Logo refreshes the page.
+<li>Clicking on the Covid Logo refreshes the page.</li>
+
 
 ### `Search Bar`
 
-Helps in displaying the specific country data.<br />
-Search List contains both Country Flag and Country Name.<br />
-Search functionality is performed either by entering the country name in search bar or by simply clicking on the country name from the list.<br />
+<li>Helps in displaying the specific country data.</li>
+<li>Search List contains both Country Flag and Country Name.</li>
+<li>Search functionality is performed either by entering the country name in search bar or by simply clicking on the country name from the list.</li>
+
+
 
 ### `Social Media Icons`
-
-These Social Media Icons helps to share the React-App to their Social media accounts.
+<li>These Social Media Icons helps to share the React-App to their Social media accounts.</li>
 
 ### `Country Info panel`
 
-Whenever a country is selected the country flag and country name is displayed in Info panel.
+<li>Whenever a country is selected the country flag and country name is displayed in Info panel.</li>
 
 ### `Info Card`
-Info Card represents new infected/recovered/death cases , last updated date , total number of infected/recovered/death cases.<br />
-Numeral is used to convert higher values in easy readable format.<br/>
-new Date(date).toDateString() is used to convert updatedAt date to Day Month Date Year format.<br/>
+<li>Info Card represents new infected/recovered/death cases , last updated date , total number of infected/recovered/death cases.</li>
+<li>Numeral is used to convert higher values in easy readable format.</li>
+<li>new Date(date).toDateString() is used to convert updatedAt date to Day Month Date Year format.</li>
 
 ### `View Selector`
 
